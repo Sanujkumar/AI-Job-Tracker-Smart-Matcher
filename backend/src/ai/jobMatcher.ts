@@ -102,6 +102,7 @@ Return ONLY a number between 0 and 30.
     `);
 
     try {
+      //@ts-ignore
       const chain = prompt.pipe(this.llm);
       const result = await chain.invoke({
         requirements: requirements.join('\n'),
@@ -148,6 +149,7 @@ Low matches should be diplomatic about gaps.
     const level = score > 70 ? 'strong' : score > 40 ? 'medium' : 'weak';
 
     try {
+      //@ts-ignore
       const chain = prompt.pipe(this.llm);
       const result = await chain.invoke({
         jobTitle: job.title,

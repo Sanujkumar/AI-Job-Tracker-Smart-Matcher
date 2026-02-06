@@ -145,7 +145,7 @@ export default function Filters({ filters, onChange }: FiltersProps) {
           className="input-field"
         >
           <option value="all">All Matches</option>
-          <option value="high">High (>70%)</option>
+          <option value="high">High (70%)</option>
           <option value="medium">Medium (40-70%)</option>
         </select>
       </div>
